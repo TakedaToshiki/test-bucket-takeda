@@ -1,0 +1,9 @@
+<h1>Image作成</h1>
+<%= form_tag("/images/create", {multipart: true}) do %>
+          <p>ユーザー名</p>
+          <input name="name" value="<%= @image.name %>">
+          <p>画像</p>
+          <input image="image" type="file" value="<%= @image.name %>">
+         
+          <input type="submit" value="新規登録">
+        <% end %>
