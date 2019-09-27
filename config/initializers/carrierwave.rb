@@ -5,9 +5,9 @@ CarrierWave.configure do |config|
     config.fog_directory  = 'test-bucket-takeda'
     config.fog_credentials = {
       provider: 'AWS',
-      aws_access_key_id: ENV['AKIAS53NE74QLGCTUYVP'],
-      aws_secret_access_key: ENV['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'],
-      region: ENV['ap-northeast-1'],
+      aws_access_key_id:  'AKIAS53NE74QLGCTUYVP',
+      aws_secret_access_key: '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',
+      region: 'ap-northeast-1',
       path_style: true
     }
   else
